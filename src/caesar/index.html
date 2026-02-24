@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceasar Cypher</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Ceasar Cypher</h1>
+    <p class="description">Vanilla JS</p>
+
+    <p class="label">Cypher key</p>
+
+    <input class="input" id="cypher-key" type="number" data-cy="cypher-key" placeholder="Enter cypher key" min="1" max="25">
+
+    <textarea class="input-textarea" id="text-to-cypher" data-cy="text-to-cypher" placeholder="Enter text to cypher" maxlength="25"></textarea>
+
+    <button class="button" id="cypher-button" data-cy="cypher-button">Cypher</button>
+    
+    <p id="cypher-result" data-cy="cypher-result"></p>
+    <script src="main.js"></script>
+</body>
+</html>
