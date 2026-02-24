@@ -83,6 +83,6 @@ context('Lightbox', () => {
         cy.dataCy('add-comment-form').submit()
         cy.dataCy('comments-container').contains('Cypress is awesomex2!').should('exist')
         cy.dataCy('delete-comment-button').eq(1).click()
-        cy.dataCy('comments-container').('not.contain', 'Cypress is awesomex2!')
+        cy.dataCy('comments-container').should('not.contain', 'Cypress is awesomex2!')
     });
 });
